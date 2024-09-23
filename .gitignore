@@ -33,7 +33,6 @@ CMakeLists.txt.user
 assimp.pc
 assimp.aps
 revision.h
-include/assimp/config.h
 unit.vcxproj.user
 
 # CMake
