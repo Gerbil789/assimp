@@ -32,7 +32,6 @@ CMakeLists.txt.user
 # Generated
 assimp.pc
 assimp.aps
-revision.h
 unit.vcxproj.user
 
 # CMake
