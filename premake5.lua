@@ -1,5 +1,6 @@
 project "assimp"
     kind "StaticLib"
+    architecture "x64"
     language "C++"
     cppdialect "C++17"
     staticruntime "on"
@@ -99,8 +100,9 @@ project "assimp"
         "ASSIMP_BUILD_NO_TRANSFORMTEXCOORDS_PROCESS",
         "ASSIMP_BUILD_NO_OPTIMIZEGRAPH_PROCESS",
         "ASSIMP_BUILD_NO_EMBEDTEXTURES_PROCESS",
-        "ASSIMP_BUILD_NO_DEBONE_PROCESS",
+        "ASSIMP_BUILD_NO_DEBONE_PROCESS"
     }
+
 
     files {
         "include/**",
@@ -110,7 +112,8 @@ project "assimp"
         "code/Geometry/**",
         "code/Material/**",
         "code/PostProcessing/**",
-        "contrib/zlib/**",
+        "contrib/zlib/**.h",
+        "contrib/zlib/**.c",
     }
 
     includedirs {

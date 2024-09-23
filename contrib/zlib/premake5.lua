@@ -1,6 +1,6 @@
 project "zlib"
     kind "StaticLib"
-    architecture "x86"
+    architecture "x64"
     language "C"
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -12,8 +12,10 @@ project "zlib"
 
     includedirs {
         "",
-        "contrib"
+        -- "contrib"
     }
+
+    defines { "NO_ASM" }
 
     filter "system:windows"
         systemversion "latest"
